@@ -1,0 +1,14 @@
+{
+  "name": "polyt-demo",
+  "version": "1.0.0",
+  "description": "Demo application (server & client) for PolyT",
+  "scripts": {
+    "dev": "concurrently \"cd server && flask run\" \"cd client && npm run dev\""
+  },
+  "keywords": [],
+  "author": "Paul Bokelman",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
