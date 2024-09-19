@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Demo application (server & client) for PolyT",
   "scripts": {
-    "dev": "concurrently \"cd server && flask run\" \"cd client && npm run dev\""
+    "server": ".venv/bin/python server/app.py",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \".venv/bin/python server/app.py\" \"cd client && npm run dev\""
   },
   "keywords": [],
   "author": "Paul Bokelman",
