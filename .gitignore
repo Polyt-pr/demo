@@ -2,3 +2,4 @@ node_modules
 .vscode
 .venv
 *.sqlite3*
+.env*
