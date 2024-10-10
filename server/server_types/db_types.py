@@ -8,7 +8,5 @@ class CreatePollPayload(TypedDict):
     prompt: str
     n_responses: int
 
-# --------------------------------- RESPONSE --------------------------------- #
-
-class UpdateResponsePayload(TypedDict):
-    data: str
+class RespondToPollPayload(TypedDict):
+    text: str

@@ -1,5 +1,4 @@
 from tortoise import Model, fields
-from uuid import uuid4
 
 class User(Model):
     id = fields.UUIDField(pk=True)
@@ -24,6 +23,5 @@ class ProcessedResponseNuance(Model):
 
 class Response(Model):
     id = fields.UUIDField(pk=True)
-    key = fields.UUIDField(default=uuid4, unique=True)
-    data = fields.TextField(null=True)
+    text = fields.TextField(null=True)
     poll: fields.ForeignKeyRelation[Poll] = fields.ForeignKeyField("models.Poll", related_name="polls")
